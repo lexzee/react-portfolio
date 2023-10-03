@@ -1,0 +1,209 @@
+#root {
+  max-width: 350px;
+  margin: 0 auto;
+  // padding: 2rem;
+  text-align: center;
+}
+
+.App{
+  width: 350px;
+  // min-height: 100vh;
+  // background: $VTBlack;
+  background: $STBlack url("../src/assets/images/bgBlend.png") no-repeat;
+  background-blend-mode: soft-light;
+  background-size: cover;
+
+  .head{
+    background: url("../src/assets/images/heroBg.jpg");
+    background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 543px;
+    border-radius: 0 0 20px 20px;
+    padding: 25px;
+
+    .navigation{
+      display: flex;
+      // padding: 16px 18px;
+      margin-bottom: 25px;
+
+      .logo{
+        color: white;
+        font-size: 20px;
+        font-family: 'Inter';
+        font-weight: 700;
+        word-wrap: break-word;
+      }
+
+      .menu{
+        margin-left: auto;
+      }
+    }
+
+    .hero{
+      // padding: 16px 18px;
+      color: $offWhite;
+      text-align: left;
+
+      .sec1{
+        .heading{
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          color: $blue;
+        }
+
+        .desc{
+          font-size: 12px;
+        }
+
+        .cta{
+          display: flex;
+          gap: 25px;
+          margin: 16px auto 25px;
+        }
+      }
+
+      .sec2{
+        display: flex;
+        place-content: center;
+        margin: 16px auto;
+
+        .heroImg{
+          width: 100%;
+          height: 100%;
+          margin-top: 40px;
+          // box-shadow: 0px 10px 5px #3C339A;
+        }
+      }
+    }
+  }
+
+  .main{
+    // margin: 16px 18px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .about{
+      // margin: 16px 18px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      position: relative;
+      padding: 25px 0;
+
+      .sec1{
+        background: $MTBlack;
+        border-radius: 10px;
+        padding: 16px 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+        border: 1px solid $deepBlue;
+        box-shadow: 0px 0px 2px 1px purple;
+
+        h2{
+          font-size: 16px;
+          font-weight: 500;
+          color: $lightBlue;
+          margin-bottom: 10px;
+        }
+        .socials{
+          position: relative;
+          display: flex;
+          gap: 7px;
+          flex-wrap: wrap;
+
+          .social{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            width: 80px;
+            // outline: 1px solid blue;
+
+            img{
+              max-width: 25%;
+            }
+
+            p{
+              font-size: 10px;
+            }
+          }
+        }
+
+      }
+      .sec2{
+        background: $MTBlack;
+        border-radius: 10px;
+        padding: 16px 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+        border: 1px solid $deepBlue;
+        box-shadow: 0px 0px 2px 1px purple;
+
+        h2{
+          font-size: 16px;
+          font-weight: 500;
+          color: $lightBlue;
+          // margin-bottom: 0px;
+        }
+
+        .tools{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 17px;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .projects{
+      background: $MTBlack;
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      border: 1px solid $deepBlue;
+      box-shadow: 0px 0px 2px 1px purple;
+
+      .projectsTiles{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+
+  .footer{
+    border-radius: 0 0 20px 20px;
+    padding: 25px;
+    background: hsla(0, 0%, 0%, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    h2{
+      color: $blue;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    button{
+      transform: scale(.8);
+    }
+  }
+}
+
+
+.hide{
+  display: none;
+}

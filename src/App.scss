@@ -1,0 +1,10 @@
+@import './sass/config';
+@import './sass/utils';
+@import './sass/mobile';
+
+body{
+  // background: url("./assets/images/body-bg.jpg") center fixed;
+  background: url("./assets/images/heroBg2.jpg") center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
