@@ -34,11 +34,17 @@
       margin-bottom: 25px;
 
       .logo{
-        color: white;
+        color: rgba(255, 255, 255, 0.116);
         font-size: $h1;
         font-family: 'Inter';
         font-weight: 700;
         word-wrap: break-word;
+        // background: green;
+        // background: linear-gradient(35deg, #FE0707, #06A5FE, #54FE04, #FF00A8, #FFE502);
+        background: url(../src/assets/images/bg.jpg);
+        animation: animateBG 9s infinite ease;
+        -webkit-background-clip: text;
+        background-clip: text;
       }
 
       .menu{

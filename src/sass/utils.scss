@@ -18,9 +18,9 @@ h1, h2, h3, h4, h5, p{
 a{
   text-decoration: none;
 
-  &:hover{
-    transform: translate(2px, -2px);
-  }
+  // &:hover{
+  //   transform: translate(2px, -2px);
+  // }
 }
 li{
   list-style: none;
@@ -68,7 +68,7 @@ button{
   background: $VTBlack;
   box-shadow: $shadow2;
   border-radius: 0.6em;
-
+  
   img{
     width: 20%;
   }
@@ -84,9 +84,10 @@ button{
   span{
     font-size: 10px;
   }
-
+  
   &:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
+    animation: shadow 3s infinite ease;
   }
 }
 
@@ -131,6 +132,11 @@ button{
   .hide{
     display: none;
   }
+
+  &:hover{
+    transform: scale(1.01);
+    animation: shadow 3s infinite ease;
+  }
 }
 
 
@@ -142,4 +148,25 @@ button{
 
 .show{
   display: block;
+}
+
+
+@keyframes animateBG{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes shadow {
+  0%{box-shadow: 0px 0px 5px 1px #FE0707;}
+  20%{box-shadow: 0px 0px 5px 1px #07fe59;}
+  50%{box-shadow: 0px 0px 5px 1px #9f07fe;}
+  80%{box-shadow: 0px 0px 5px 1px #07fe59;}
+  100%{box-shadow: 0px 0px 5px 1px #fe0707;}
 }

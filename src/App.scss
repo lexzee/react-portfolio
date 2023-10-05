@@ -14,11 +14,25 @@
 body{
   // background: url("./assets/images/body-bg.jpg") center fixed;
   background: url("./assets/images/heroBg2.jpg") center fixed;
-  // background-blend-mode: overlay;
+  animation: animateBG 20s infinite linear;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   place-content: center;
   place-items: center;
+  animation-fill-mode: both
 }
 @import './sass/mobile';
+
+
+@keyframes animateBG{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
