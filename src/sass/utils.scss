@@ -22,23 +22,27 @@ a{
     transform: translate(2px, -2px);
   }
 }
+li{
+  list-style: none;
+}
 
 
 button{
-  padding: 10px 20px;
+  padding: 0.6em 1em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   // box-shadow: 0px 4px 4px linear-gradient(35deg, #FE0707, #06A5FE, #54FE04, #FF00A8, #FFE502);
   box-shadow: 0px 2px 5px 0px purple;
-  border-radius: 10px;
-  border: 1px #FE0707 solid;
+  border-radius: 5px;
+  border: 1px #fe0707 solid;
   display: inline-flex;
   font-weight: 700;
+  font-size: $p-font;
 
   &:hover, &:focus{
     background: transparent;
     color: white;
     border: 1px $deepBlue solid;
-    box-shadow: 0px 1px 5px 0px #FE0707;
+    box-shadow: 0px 1px 3px 0px #FE0707;
   }
 }
 .alpha{
@@ -56,24 +60,26 @@ button{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 17px;
-  padding: 17px;
+  gap: 1em;
+  padding: 1em .9em 1em 1em;
+  word-break: break-all;
   border: 1px solid rebeccapurple;
-  border: 2px solid $deepBlue;
+  // border: 2px solid $deepBlue;
   background: $VTBlack;
-  box-shadow: 1px 1px 2px 1px purple;
-  border-radius: 10px;
+  box-shadow: $shadow2;
+  border-radius: 0.6em;
 
   img{
     width: 20%;
   }
 
   p{
-    font-size: 12px;
+    font-size: $p-font;
 
     display: flex;
     flex-direction: column;
     gap: 6px;
+    // width: 100%;
   }
   span{
     font-size: 10px;
@@ -111,7 +117,7 @@ button{
   outline: 1px solid rebeccapurple;
   // height: 155px;
   border-radius: 8px;
-  box-shadow: 0px 0px 2px 2px purple;
+  box-shadow: $shadow1;
 
   .front{
     display: flex;

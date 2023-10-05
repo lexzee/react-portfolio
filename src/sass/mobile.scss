@@ -1,17 +1,23 @@
 #root {
   max-width: 350px;
   margin: 0 auto;
-  // padding: 2rem;
   text-align: center;
 }
 
 .App{
-  width: 350px;
+  min-width: 100vw;
+  // max-width: 414px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: 410px;
   // min-height: 100vh;
   // background: $VTBlack;
-  background: $STBlack url("../src/assets/images/bgBlend.png") no-repeat;
+  // background: $STBlack url("../src/assets/images/bgBlend.png") no-repeat;
+  background: $MTBlack no-repeat;
   background-blend-mode: soft-light;
   background-size: cover;
+  transition: ease-in 2s;
 
   .head{
     background: url("../src/assets/images/heroBg.jpg");
@@ -19,16 +25,17 @@
     // background-size: cover;
     // height: 543px;
     border-radius: 0 0 20px 20px;
-    padding: 25px;
+    padding: $pad1;
 
     .navigation{
+      // position: relative;
       display: flex;
-      // padding: 16px 18px;
+      // padding: $padSec;
       margin-bottom: 25px;
 
       .logo{
         color: white;
-        font-size: 20px;
+        font-size: $h1;
         font-family: 'Inter';
         font-weight: 700;
         word-wrap: break-word;
@@ -37,23 +44,61 @@
       .menu{
         margin-left: auto;
       }
+
+      .navMobile{
+        // outline: 1px solid red;
+        position: fixed;
+        width: 45%;
+        min-height: 100vh;
+        background: hsla(0, 0%, 0%, 0.9);
+        box-shadow: $shadow3;
+        padding-top: .6em;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 700ms;
+
+        li{
+          display: flex;
+          justify-content: left;
+          align-items: left;
+          margin: 3em 1.5em;
+          font-size: $p-font;
+
+          .menuClose{
+            align-items: right;
+            margin-left: auto;
+            padding-right: 1.25em;
+            margin-top: -.5em;
+          }
+
+          button{
+            align-self: left;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .hideNav{
+        right: -50%;
+      }
     }
 
     .hero{
-      // padding: 16px 18px;
+      // padding: $padSec;
       color: $offWhite;
       text-align: left;
 
       .sec1{
         .heading{
-          font-size: 20px;
+          font-size: $h1;
           font-weight: 700;
           margin-bottom: 10px;
           color: $blue;
         }
 
         .desc{
-          font-size: 12px;
+          font-size: $p-font;
         }
 
         .cta{
@@ -80,7 +125,7 @@
 
   .main{
     // margin: 16px 18px;
-    padding: 25px;
+    padding: $pad1;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -92,21 +137,21 @@
       flex-direction: column;
       gap: 25px;
       position: relative;
-      padding: 25px 0;
+      padding: $pad1 0;
 
       .sec1{
         background: $MTBlack;
         border-radius: 10px;
-        padding: 16px 18px;
+        padding: $padSec;
         display: flex;
         flex-direction: column;
         gap: 16px;
         position: relative;
         border: 1px solid $deepBlue;
-        box-shadow: 0px 0px 2px 1px purple;
+        box-shadow: $shadow1;
 
         h2{
-          font-size: 16px;
+          font-size: $h2;
           font-weight: 500;
           color: $lightBlue;
           margin-bottom: 10px;
@@ -129,7 +174,7 @@
             }
 
             p{
-              font-size: 10px;
+              font-size: $p2;
             }
           }
         }
@@ -138,16 +183,16 @@
       .sec2{
         background: $MTBlack;
         border-radius: 10px;
-        padding: 16px 18px;
+        padding: $padSec;
         display: flex;
         flex-direction: column;
         gap: 16px;
         position: relative;
         border: 1px solid $deepBlue;
-        box-shadow: 0px 0px 2px 1px purple;
+        box-shadow: $shadow1;
 
         h2{
-          font-size: 16px;
+          font-size: $h2;
           font-weight: 500;
           color: $lightBlue;
           // margin-bottom: 0px;
@@ -165,13 +210,13 @@
     .projects{
       background: $MTBlack;
       border-radius: 10px;
-      padding: 16px 18px;
+      padding: $padSec;
       display: flex;
       flex-direction: column;
       gap: 16px;
       position: relative;
       border: 1px solid $deepBlue;
-      box-shadow: 0px 0px 2px 1px purple;
+      box-shadow: $shadow1;
 
       .projectsTiles{
         display: flex;
@@ -183,7 +228,7 @@
 
   .footer{
     border-radius: 0 0 20px 20px;
-    padding: 25px;
+    padding: $pad1;
     background: hsla(0, 0%, 0%, 0.8);
     display: flex;
     flex-direction: column;
@@ -193,7 +238,7 @@
 
     h2{
       color: $blue;
-      font-size: 16px;
+      font-size: $h2;
       font-weight: 500;
     }
 

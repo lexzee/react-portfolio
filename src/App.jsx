@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
-import menu from './assets/images/icon-menu.svg'
+import menu from './assets/images/menu.svg'
 import hero from './assets/images/hero.png'
 import github from './assets/images/github.png'
 import Button from './components/Button'
@@ -10,7 +10,7 @@ import Project from './components/Project'
 import { socialData, projectData, skillsData, toolsData } from './data.js'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const projects = projectData.map(data => {
     return <Project
@@ -36,13 +36,25 @@ function App() {
   const tools = toolsData.map(data => {
     return <Tool value={data.title} link={data.link} image={data.image} />
   })
+
+  const handleNavMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
   return (
     <>
-      <div className="App">
+      <div className="App" id='home'>
         <header className="head">
           <nav className="navigation">
             <p className="logo">Lexzee</p>
-            <img src={menu} alt="" className='menu' />
+            <img src={menu} alt="" className={`menu ${menuOpen && "hideNav"}`}onClick={handleNavMenu}/>
+            <ul className={`navMobile ${!menuOpen && "hideNav"}`}>
+              <li><img src={menu} alt="" className={`menuClose`} onClick={handleNavMenu}/></li>
+              <li><a href='#home'>Home</a></li>
+              <li><a href='#about'>About</a></li>
+              <li><a href='#project'>Project</a></li>
+              <li><a href='#contact'>Contact</a></li>
+              <li><Button value={"Download Resume"} class={'alpha'} /></li>
+            </ul>
           </nav>
           <div className="hero">
             <div className="sec1">
@@ -61,7 +73,7 @@ function App() {
           </div>
         </header>
         <main className="main">
-          <div className="about">
+          <div className="about" id='about'>
             <div className="sec1">
               <h2 className="aboutHead">
                 A Little about me
@@ -74,7 +86,7 @@ function App() {
                 Lorem ipsum dolor sit amet consecutor. hiihefihioivsduvisd
                 uefuieugfwefowefoiuewfwef gdty6 td tstr tsyrs srsys sysjts  tdd ud ud uyd tdyu  6e6e 6e t e5shjdhd  ,loiot ofi if uf u u
               </p>
-              <h2 className="contactHead">
+              <h2 className="contactHead" id='contact'>
               Contact me on Social Media
               </h2>
               <section className="socials">
@@ -89,7 +101,7 @@ function App() {
               </section>
             </div>
           </div>
-          <div className="projects">
+          <div className="projects" id='project'>
             <p>Some of My Projects</p>
             <div className="projectsTiles">
               {projects}

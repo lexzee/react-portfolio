@@ -1,10 +1,24 @@
 @import './sass/config';
 @import './sass/utils';
-@import './sass/mobile';
+
+#root{
+  display: flex;
+  place-content: center;
+  place-items: center;
+  // background: $STBlack url("./assets/images/bgBlend.png") center fixed;
+  // width: 375px;
+  // max-width: 419px;
+  max-width: 1440px;
+}
 
 body{
   // background: url("./assets/images/body-bg.jpg") center fixed;
   background: url("./assets/images/heroBg2.jpg") center fixed;
+  // background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  place-content: center;
+  place-items: center;
 }
+@import './sass/mobile';
