@@ -75,7 +75,7 @@ export const skillsData = [
 export const toolsData = [
   {
     title: 'HTML',
-    image: '../src/assets/images/html.png',
+    image: './assets/images/html.png',
     link: '#'
   },
   {
