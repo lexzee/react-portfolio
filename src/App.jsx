@@ -2,16 +2,11 @@ import { useState } from 'react'
 import './App.scss'
 import menu from './assets/images/menu.svg'
 import hero from './assets/images/hero.png'
-import github from './assets/images/github.png'
 import Button from './components/Button'
 import SkillCard from './components/SkillCard'
 import Tool from './components/Tool'
 import Project from './components/Project'
 import { socialData, projectData, skillsData, toolsData } from './data.jsx'
-// import { socialData, projectData, toolsData } from './data.jsx'
-// const skillsImages = skillsData.map(data => {
-//   return `import ${data.title} from ${data.image}`
-// })
 
 
 function App() {
@@ -34,24 +29,9 @@ function App() {
     </div>
   })
 
-  // const skillsData = [
-  //   {
-  //     // image: "./src/assets/images/web.png",
-  //     image: web,
-  //     title: "Web Development",
-  //     description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
-  //   },
-  //   {
-  //     image: "./src/assets/images/graphic.png",
-  //     title: "Graphic Design",
-  //     description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
-  //   },
-  // ]
   const skills = skillsData.map(data => {
     return <SkillCard title={data.title} desc={data.description} image={data.image} />
   })
-
-  console.log(skills);
 
   const tools = toolsData.map(data => {
     return <Tool value={data.title} link={data.link} image={data.image} />
