@@ -80,7 +80,7 @@ export const toolsData = [
   },
   {
     title: 'CSS',
-    image: '../src/assets/images/css.png',
+    image: '../assets/images/css.png',
     link: '#'
   },
   {
