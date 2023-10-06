@@ -1,3 +1,6 @@
+import web from './assets/images/web.png'
+import gdesign from './assets/images/graphic.png'
+
 export const socialData = [
   {
     name: "LinkedIn",
@@ -61,13 +64,14 @@ export const projectData = [
 
 export const skillsData = [
   {
-    image: "./src/assets/images/web.png",
-    // image: web,
+    // image: "./src/assets/images/web.png",
+    image: web,
     title: "Web Development",
     description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
   },
   {
-    image: "./src/assets/images/graphic.png",
+    // image: "./src/assets/images/graphic.png",
+    image: gdesign,
     title: "Graphic Design",
     description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
   },
