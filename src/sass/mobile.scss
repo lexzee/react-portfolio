@@ -6,31 +6,23 @@
 
 .App{
   min-width: 100vw;
-  // max-width: 414px;
   display: flex;
   flex-direction: column;
   align-self: center;
   max-width: 410px;
-  // min-height: 100vh;
-  // background: $VTBlack;
-  // background: $STBlack url("../src/assets/images/bgBlend.png") no-repeat;
-  background: $MTBlack no-repeat;
+  background: $MTBlack url("../src/assets/images/bgBlend.webp") no-repeat;
   background-blend-mode: soft-light;
   background-size: cover;
   transition: ease-in 2s;
 
   .head{
-    background: url("../src/assets/images/heroBg.jpg");
+    background: url("../src/assets/images/heroBg.webp");
     background-repeat: no-repeat;
-    // background-size: cover;
-    // height: 543px;
     border-radius: 0 0 20px 20px;
     padding: $pad1;
 
     .navigation{
-      // position: relative;
       display: flex;
-      // padding: $padSec;
       margin-bottom: 25px;
 
       .logo{
@@ -39,9 +31,7 @@
         font-family: 'Inter';
         font-weight: 700;
         word-wrap: break-word;
-        // background: green;
-        // background: linear-gradient(35deg, #FE0707, #06A5FE, #54FE04, #FF00A8, #FFE502);
-        background: url(../src/assets/images/bg.jpg);
+        background: url(../src/assets/images/bg.webp);
         animation: animateBG 9s infinite ease;
         -webkit-background-clip: text;
         background-clip: text;
@@ -130,14 +120,12 @@
   }
 
   .main{
-    // margin: 16px 18px;
     padding: $pad1;
     display: flex;
     flex-direction: column;
     gap: 25px;
 
     .about{
-      // margin: 16px 18px;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -173,7 +161,6 @@
             align-items: center;
             gap: 5px;
             width: 80px;
-            // outline: 1px solid blue;
 
             img{
               max-width: 25%;
@@ -201,7 +188,6 @@
           font-size: $h2;
           font-weight: 500;
           color: $lightBlue;
-          // margin-bottom: 0px;
         }
 
         .tools{

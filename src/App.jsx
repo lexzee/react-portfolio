@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.scss'
 import menu from './assets/images/menu.svg'
-import hero from './assets/images/hero.png'
+import hero from './assets/images/hero.webp'
 import Button from './components/Button'
 import SkillCard from './components/SkillCard'
 import Tool from './components/Tool'
 import Project from './components/Project'
 import { socialData, projectData, skillsData, toolsData } from './data.jsx'
+import {nanoid }from 'nanoid'
 
 
 function App() {
@@ -19,22 +20,23 @@ function App() {
       description={data.description}
       image={data.image}
       link={data.link}
+      key= {nanoid()}
     />
   })
 
   const social = socialData.map(data => {
-    return <div className="social">
+    return <div className="social" key= {nanoid()}>
       <img src={data.image} alt={data.name} />
       <a href={data.link}><p>{data.name}</p></a>
     </div>
   })
 
   const skills = skillsData.map(data => {
-    return <SkillCard title={data.title} desc={data.description} image={data.image} />
+    return <SkillCard key= {nanoid()} title={data.title} desc={data.description} image={data.image} />
   })
 
   const tools = toolsData.map(data => {
-    return <Tool value={data.title} link={data.link} image={data.image} />
+    return <Tool key= {nanoid()} value={data.title} link={data.link} image={data.image} />
   })
 
   const handleNavMenu = () => {

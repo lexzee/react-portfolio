@@ -5,15 +5,11 @@
   display: flex;
   place-content: center;
   place-items: center;
-  // background: $STBlack url("./assets/images/bgBlend.png") center fixed;
-  // width: 375px;
-  // max-width: 419px;
   max-width: 1440px;
 }
 
 body{
-  // background: url("./assets/images/body-bg.jpg") center fixed;
-  background: url("./assets/images/heroBg2.jpg") center fixed;
+  background: url("./assets/images/heroBg2.webp") center fixed;
   animation: animateBG 20s infinite linear;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,8 +1,8 @@
 //Social
-import li from './assets/images/linkedin.png'
-import tw from './assets/images/twitter.png'
-import gh from './assets/images/github.png'
-import ig from './assets/images/instagram.png'
+import li from './assets/images/linkedin.webp'
+import tw from './assets/images/twitter.webp'
+import gh from './assets/images/github.webp'
+import ig from './assets/images/instagram.webp'
 
 export const socialData = [
   {
@@ -29,11 +29,11 @@ export const socialData = [
 
 
 //Project
-import p1 from './assets/images/socialProof.jpg'
-import p2 from './assets/images/nftPreview.png'
-import p3 from './assets/images/huddle.jpg'
-import p4 from './assets/images/productPreview.jpg'
-import p5 from './assets/images/newsPage.jpg'
+import p1 from './assets/images/socialProof.webp'
+import p2 from './assets/images/nftPreview.webp'
+import p3 from './assets/images/huddle.webp'
+import p4 from './assets/images/productPreview.webp'
+import p5 from './assets/images/newsPage.webp'
 
 export const projectData = [
   {
@@ -74,8 +74,8 @@ export const projectData = [
 ]
 
 //Skills
-import web from './assets/images/web.png'
-import gdesign from './assets/images/graphic.png'
+import web from './assets/images/web.webp'
+import gdesign from './assets/images/graphic.webp'
 
 export const skillsData = [
   {
@@ -91,12 +91,12 @@ export const skillsData = [
 ]
 
 //Tools
-import html from './assets/images/html.png'
-import css from './assets/images/css.png'
-import js from './assets/images/javascript.png'
-import react from './assets/images/react.png'
-import vscode from './assets/images/vscode.png'
-import figma from './assets/images/figma.png'
+import html from './assets/images/html.webp'
+import css from './assets/images/css.webp'
+import js from './assets/images/javascript.webp'
+import react from './assets/images/react.webp'
+import vscode from './assets/images/vscode.webp'
+import figma from './assets/images/figma.webp'
 
 export const toolsData = [
   {
