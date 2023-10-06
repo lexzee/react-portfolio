@@ -1,4 +1,5 @@
 import React from 'react'
+import web from '../assets/images/web.png'
 
 const SkillCard = (props) => {
   return (

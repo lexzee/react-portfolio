@@ -62,6 +62,7 @@ export const projectData = [
 export const skillsData = [
   {
     image: "./src/assets/images/web.png",
+    // image: web,
     title: "Web Development",
     description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
   },

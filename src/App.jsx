@@ -3,11 +3,16 @@ import './App.scss'
 import menu from './assets/images/menu.svg'
 import hero from './assets/images/hero.png'
 import github from './assets/images/github.png'
+import web from './assets/images/web.png'
 import Button from './components/Button'
 import SkillCard from './components/SkillCard'
 import Tool from './components/Tool'
 import Project from './components/Project'
 import { socialData, projectData, skillsData, toolsData } from './data.js'
+// const skillsImages = skillsData.map(data => {
+//   return `import ${data.title} from ${data.image}`
+// })
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -32,6 +37,8 @@ function App() {
   const skills = skillsData.map(data => {
     return <SkillCard title={data.title} desc={data.description} image={data.image} />
   })
+
+  console.log(skills);
 
   const tools = toolsData.map(data => {
     return <Tool value={data.title} link={data.link} image={data.image} />
@@ -95,6 +102,7 @@ function App() {
             </div>
             <div className="sec2">
               {skills}
+              <SkillCard title={'hello'} desc={'bilatattata'} image={web} />
               <h2>Some of the tools I work with</h2>
               <section className="tools">
                 {tools}
