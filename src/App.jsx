@@ -8,7 +8,7 @@ import Button from './components/Button'
 import SkillCard from './components/SkillCard'
 import Tool from './components/Tool'
 import Project from './components/Project'
-import { socialData, projectData, skillsData, toolsData } from './data.js'
+import { socialData, projectData, skillsData, toolsData } from './data.jsx'
 // const skillsImages = skillsData.map(data => {
 //   return `import ${data.title} from ${data.image}`
 // })
