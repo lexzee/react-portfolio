@@ -34,6 +34,7 @@ import p2 from './assets/images/nftPreview.webp'
 import p3 from './assets/images/huddle.webp'
 import p4 from './assets/images/productPreview.webp'
 import p5 from './assets/images/newsPage.webp'
+import p6 from './assets/images/statsPreview.webp'
 
 export const projectData = [
   {
@@ -70,6 +71,9 @@ export const projectData = [
   },
   {
     image: p5,
+  },
+  {
+    image: p6,
   }
 ]
 

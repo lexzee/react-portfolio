@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.scss'
 import menu from './assets/images/menu.svg'
 import hero from './assets/images/hero.webp'
@@ -12,6 +12,21 @@ import {nanoid }from 'nanoid'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleView = ()=>{
+      setIsMobile(window.innerWidth < 780)
+    }
+    handleView()
+
+    window.addEventListener('resize', handleView);
+
+    return () => {
+      window.removeEventListener('resize', handleView);
+    }
+  }, [isMobile])
+
 
   const projects = projectData.map(data => {
     return <Project
@@ -28,6 +43,13 @@ function App() {
     return <div className="social" key= {nanoid()}>
       <img src={data.image} alt={data.name} />
       <a href={data.link}><p>{data.name}</p></a>
+    </div>
+  })
+  const socialFoot = socialData.map(data => {
+    return <div className="socialFoot" key= {nanoid()}>
+      <a href={data.link}>
+      <img src={data.image} alt={data.name} />
+      </a>
     </div>
   })
 
@@ -48,14 +70,25 @@ function App() {
         <header className="head">
           <nav className="navigation">
             <p className="logo">Lexzee</p>
-            <img src={menu} alt="" className={`menu ${menuOpen && "hideNav"}`}onClick={handleNavMenu}/>
+
+            {/* Desktop Navigation */}
+            <ul className={`navDesk ${isMobile && "hide"}`}>
+              <li><a href='#home'>Home</a></li>
+              <li><a href='#about'>About</a></li>
+              <li><a href='#project'>Project</a></li>
+              <li><a href='#contact'>Contact</a></li>
+              <li><a href='https://drive.google.com/file/d/1U6s338BgdLVi-tI_0VgIOVaMoJi-7AVE/view?usp=drive_link'><Button value={"Download Resume"} class={'alpha'} /></a></li>
+            </ul>
+
+            {/* Mobile Navigation */}
+            <img src={menu} alt="" className={`menu ${!isMobile && "hide"}`} onClick={handleNavMenu}/>
             <ul className={`navMobile ${!menuOpen && "hideNav"}`}>
               <li><img src={menu} alt="" className={`menuClose`} onClick={handleNavMenu}/></li>
               <li><a href='#home'>Home</a></li>
               <li><a href='#about'>About</a></li>
               <li><a href='#project'>Project</a></li>
               <li><a href='#contact'>Contact</a></li>
-              <li><Button value={"Download Resume"} class={'alpha'} /></li>
+              <li><a href='https://drive.google.com/file/d/1U6s338BgdLVi-tI_0VgIOVaMoJi-7AVE/view?usp=drive_link'><Button value={"Download Resume"} class={'alpha'} /></a></li>
             </ul>
           </nav>
           <div className="hero">
@@ -64,7 +97,9 @@ function App() {
               <p className="desc">Lorem ipsum dolor sit amet consecutor. hiihefihioivsduvisd uefuieugfwefowefoiuewfwef gdty6 td tstr tsyrs srsys sysjts  tdd ud ud uyd tdyu 6e6e 6e t e5shjdhd  ,loiot ofi if uf u u</p>
 
               <div className="cta">
-                <Button value={"Hire Me"} class={"alpha"} />
+                <a href='mailto:developerlexzee@gmail.com'>
+                  <Button value={"Hire Me"} class={"alpha"} />
+                </a>
                 <Button value={"See my work"} class={"beta"} />
               </div>
             </div>
@@ -112,8 +147,13 @@ function App() {
         </main>
         <footer className="footer">
           <h2>Get in Touch</h2>
-          <p>lorem ipsum dolor sit amet consecuter shfidfb  ksjbfd df   fdfd flih dfju dfj d ffd dfjkj dfj</p>
-          <Button value={"Let's Get Started"} class={"beta"} />
+          <div className="contact">
+            {socialFoot}
+          </div>
+          {/* <p>lorem ipsum dolor sit amet consecuter shfidfb  ksjbfd df   fdfd flih dfju dfj d ffd dfjkj dfj</p> */}
+          {/* <Button value={"Let's Get Started"} class={"beta"} /> */}
+
+          <small>&spades; Designed and Built by <a href='https://github.com/lexzee'>Lexzee</a> &spades;</small>
         </footer>
       </div>
     </>

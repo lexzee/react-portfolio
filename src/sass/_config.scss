@@ -18,3 +18,11 @@ $padSec: 1em 1.5em;
 $shadow1: 0px 0px 2px 1px purple;
 $shadow2: 1px 1px 2px 1px purple;
 $shadow3: -.2em 0px .5em 0px purple;
+
+
+@media screen and (min-width: 780px){
+  $p-font: 31px;
+  $p2: 20px;
+  $h2: 30px;
+  // $h1: 70px;
+}

@@ -16,7 +16,8 @@
   transition: ease-in 2s;
 
   .head{
-    background: url("../src/assets/images/heroBg.webp");
+    // background: url("../src/assets/images/heroBg.webp");
+    background: black;
     background-repeat: no-repeat;
     border-radius: 0 0 20px 20px;
     padding: $pad1;
@@ -212,6 +213,8 @@
 
       .projectsTiles{
         display: flex;
+        width: fit-content;
+        height: fit-content;
         flex-direction: column;
         gap: 16px;
       }
@@ -236,6 +239,20 @@
 
     button{
       transform: scale(.8);
+    }
+
+    .contact{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+      margin: auto auto;
+      gap: 1em;
+
+      img{
+        width: 1.5em;
+        height: 1.5em;
+      }
     }
   }
 }
