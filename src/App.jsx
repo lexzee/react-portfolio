@@ -93,8 +93,8 @@ function App() {
           </nav>
           <div className="hero">
             <div className="sec1">
-              <h1 className="heading">Some Catchy Tag Line</h1>
-              <p className="desc">Lorem ipsum dolor sit amet consecutor. hiihefihioivsduvisd uefuieugfwefowefoiuewfwef gdty6 td tstr tsyrs srsys sysjts  tdd ud ud uyd tdyu 6e6e 6e t e5shjdhd  ,loiot ofi if uf u u</p>
+              <h1 className="heading">Turning Ideas into Interactive Web Realities</h1>
+              <p className="desc">With a passion for aesthetics and functionality, I am your partner in crafting memorable online journeys.</p>
 
               <div className="cta">
                 <a href='mailto:developerlexzee@gmail.com'>
@@ -116,12 +116,13 @@ function App() {
                 A Little about me
               </h2>
               <p className="aboutDet">
-                Lorem ipsum dolor sit amet consecutor. hiihefihioivsduvisd
-                uefuieugfwefowefoiuewfwef gdty6 td tstr tsyrs srsys sysjts  tdd ud ud uyd tdyu  6e6e 6e t e5shjdhd  ,loiot ofi if uf u u
+                Welcome to my corner of the web! I am Abdulquddus Abdulrahman (<i>Lexzee</i>), a passionate Front-End Web Developer with a knack for turning creative visions into interactive web experiences, I have honed my skills in HTML, CSS, JavaScript, and a variety of modern web technologies.
                 <br/>
                 <br />
-                Lorem ipsum dolor sit amet consecutor. hiihefihioivsduvisd
-                uefuieugfwefowefoiuewfwef gdty6 td tstr tsyrs srsys sysjts  tdd ud ud uyd tdyu  6e6e 6e t e5shjdhd  ,loiot ofi if uf u u
+                Whether it is a responsive website, a captivating user interface, or a seamless user experience, I thrive on turning concepts into reality. I believe that every line of code should not only work flawlessly but also enhance the overall aesthetic.
+                <br/>
+                <br />
+                Explore my portfolio to see some of my recent projects, and feel free to reach out if you are ready to collaborate on your next web venture. Let's turn your gigital dreams into a stunning reality, <b>one line of code at a time</b>.
               </p>
               <h2 className="contactHead" id='contact'>
               Contact me on Social Media

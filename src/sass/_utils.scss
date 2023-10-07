@@ -62,13 +62,13 @@ button{
   align-items: center;
   gap: 1em;
   padding: 1em .9em 1em 1em;
-  word-break: break-all;
+  // word-break: break-all;
   border: 1px solid rebeccapurple;
   // border: 2px solid $deepBlue;
   background: $VTBlack;
   box-shadow: $shadow2;
   border-radius: 0.6em;
-  
+
   img{
     width: 20%;
   }
@@ -168,6 +168,14 @@ button{
   50%{box-shadow: 0px 0px 5px 1px #9f07fe;}
   80%{box-shadow: 0px 0px 5px 1px #07fe59;}
   100%{box-shadow: 0px 0px 5px 1px #fe0707;}
+}
+@keyframes text {
+  0%{color:#fe07d1;}
+  20%{color:#07fe59;}
+  50%{color:#9f07fe;}
+  80%{color:#07fe59;}
+  // 100%{color: yellow;}
+  100%{color:#fe07d1;}
 }
 
 @media screen and (min-width: 780px) {

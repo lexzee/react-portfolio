@@ -85,12 +85,12 @@ export const skillsData = [
   {
     image: web,
     title: "Web Development",
-    description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
+    description: "Crafting Innovative and Creative Business Websites that Elevate Your Online Presence"
   },
   {
     image: gdesign,
-    title: "Graphic Design",
-    description: "dwfeefwffeffdsffffefffeff sfddffdsf fafdff d sdvvd sdvsdvsd sdvsdvsdv"
+    title: "UI/UX & Graphic Design",
+    description: "Designing Intuitive User Experiences and Stunning Graphics to Make Your Brand Shine"
   },
 ]
 
