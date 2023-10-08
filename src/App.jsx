@@ -122,7 +122,7 @@ function App() {
                 Whether it is a responsive website, a captivating user interface, or a seamless user experience, I thrive on turning concepts into reality. I believe that every line of code should not only work flawlessly but also enhance the overall aesthetic.
                 <br/>
                 <br />
-                Explore my portfolio to see some of my recent projects, and feel free to reach out if you are ready to collaborate on your next web venture. Let's turn your gigital dreams into a stunning reality, <b>one line of code at a time</b>.
+                Explore my portfolio to see some of my recent projects, and feel free to reach out if you are ready to collaborate on your next web venture. Let's turn your digital dreams into a stunning reality, <b>one line of code at a time</b>.
               </p>
               <h2 className="contactHead" id='contact'>
               Contact me on Social Media

@@ -38,42 +38,52 @@ import p6 from './assets/images/statsPreview.webp'
 
 export const projectData = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Social Proof Section",
+    subtitle: "React and Tailwind",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "This is a solution to the [Social proof section challenge on Frontend Mentor]",
       image: p1,
-      link: "https://reactbootcamp.com",
+      link: "https://social-proof-section-lexzee.vercel.app",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
+    title: "NFT Preview Card Component",
+    subtitle: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "This is a solution to the [NFT preview card component challenge on Frontend Mentor]",
     image: p2,
-    link: "https://reedbarger.com",
+    link: "https://nft-preview-card-lexzee.vercel.app",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Huddle Landing page",
+    subtitle: "React and SCSS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor]",
       image: p3,
-    link: "https://jsbootcamp.com",
+    link: "https://huddle-landing-page-lexzee.vercel.app",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
+    title: "Product Preview Card",
+    subtitle: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: p4,
-      link: "https://pythonbootcamp.com",
+      "This is a solution to the [Product preview card component challenge on Frontend Mentor]",
+    image: p4,
+    link: "https://product-preview-comp-lexzee.vercel.app/",
   },
   {
+    title: "News Homepage",
+    subtitle: "React and SCSS",
+    description:
+      "This is a solution to the [News Homepage challenge on Frontend Mentor]",
     image: p5,
+    link: "https://news-home-lexzee.vercel.app",
   },
   {
+    title: "Stats Preview Card Component",
+    subtitle: "React",
+    description:
+      "This is a solution to the [Stats preview card component challenge on Frontend Mentor]",
     image: p6,
+    link: "https://stats-preview-card-lexzee.vercel.app/",
   }
 ]
 
