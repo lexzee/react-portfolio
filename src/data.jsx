@@ -134,6 +134,11 @@ export const toolsData = [
     link: '#'
   },
   {
+    title: 'GitHub',
+    image: gh,
+    link: '#'
+  },
+  {
     title: 'VS Code',
     image: vscode,
     link: '#'

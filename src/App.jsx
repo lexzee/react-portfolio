@@ -2,6 +2,14 @@ import { useEffect, useState } from 'react'
 import './App.scss'
 import menu from './assets/images/menu.svg'
 import hero from './assets/images/hero.webp'
+import html from './assets/images/html.webp'
+// import css from './assets/images/css.webp'
+import js from './assets/images/javascript.webp'
+import react from './assets/images/react.webp'
+import vscode from './assets/images/vscode.webp'
+import git from './assets/images/github.webp'
+import figma from './assets/images/figma.webp'
+import chain from './assets/images/chain.png'
 import Button from './components/Button'
 import SkillCard from './components/SkillCard'
 import Tool from './components/Tool'
@@ -58,7 +66,7 @@ function App() {
   })
 
   const tools = toolsData.map(data => {
-    return <Tool key= {nanoid()} value={data.title} link={data.link} image={data.image} />
+    return <Tool key= {nanoid()} value={data.title} link={data.link} image={chain} />
   })
 
   const handleNavMenu = () => {
@@ -105,6 +113,13 @@ function App() {
             </div>
 
             <div className="sec2">
+              <img src={react} alt="" className="halo h1" />
+              <img src={figma} alt="" className="halo h3" />
+              <img src={git} alt="" className="halo h2" />
+              <img src={html} alt="" className="halo h4" />
+              <img src={js} alt="" className="halo h5" />
+              <img src={vscode} alt="" className="halo h6" />
+
               <img src={hero} alt="" className="heroImg" />
             </div>
           </div>

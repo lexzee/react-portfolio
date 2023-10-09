@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Project = (props) => {
-  const [isHover, setIsHover] = useState(false)
+  const [isHover, setIsHover] = useState(true)
 
   const handleOver = ()=> {
     // setIsHover(!isHover)
@@ -11,7 +11,7 @@ const Project = (props) => {
     <div className="project" onMouseEnter={handleOver}>
       <a
         href={props.link}>
-        <div className={`front ${isHover && 'hide'}`}>
+        <div className={`front ${!isHover && 'hide'}`}>
           <img
             src={props.image}
             alt="gallery"

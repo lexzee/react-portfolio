@@ -114,6 +114,10 @@ button{
   justify-content: center;
   height: fit-content;
   width: fit-content;
+  position: relative;
+  z-index: 0;
+  min-width: 16em;
+  min-height: 8em;
 
   outline: 1px solid rebeccapurple;
   border-radius: 8px;
@@ -125,6 +129,23 @@ button{
     img{
       width: 100%;
       border-radius: 8px;
+    }
+
+    // display: none;
+  }
+  .back{
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+    padding: .5em;
+    min-height: 7em;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    h1{
+      font-size: .7em;
     }
   }
 
@@ -138,8 +159,12 @@ button{
   }
 }
 
-
-
+.front{
+  z-index: 4;
+}
+.back{
+  z-index: -1;
+}
 
 .hide{
   display: none;
@@ -176,6 +201,11 @@ button{
   80%{color:#07fe59;}
   // 100%{color: yellow;}
   100%{color:#fe07d1;}
+}
+@keyframes halo{
+  0%{transform: translate(0%, 70%);}
+  50%{transform: translate(0%, 0%);}
+  100%{transform: translate(0, 70%);}
 }
 
 @media screen and (min-width: 780px) {

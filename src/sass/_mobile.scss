@@ -109,13 +109,57 @@
 
       .sec2{
         display: flex;
+        position: relative;
         place-content: center;
+        justify-content: center;
         margin: 16px auto;
+
+        .halo{
+          width: 40px;
+          position: absolute;
+          // z-index: 3;
+          z-index: 1;
+          animation: halo infinite 10s ease;
+        }
+        .h1{
+          left: 20%;
+          bottom: 70%;
+        }
+        .h2{
+          right: 20%;
+          top: 70%;
+        }
+        .h3{
+          left: 60%;
+          top: 10%;
+        }
+        .h4{
+          right: 60%;
+          bottom: 10%;
+          z-index: 2;
+        }
+        .h5{
+          right: 80%;
+          bottom: 40%;
+        }
+        .h6{
+          left: 80%;
+          top: 40%;
+        }
+        .h1, .h2{
+          // animation-delay: 2s;
+          animation-direction: reverse;
+        }
+        .h4, .h5{
+          // animation-delay: 2s;
+          animation-direction: alternate;
+        }
 
         .heroImg{
           width: 100%;
           height: 100%;
           margin-top: 40px;
+          z-index: 1;
           // box-shadow: 0px 10px 5px #3C339A;
         }
       }
@@ -206,10 +250,11 @@
     .projects{
       background: $MTBlack;
       border-radius: 10px;
-      padding: $padSec;
+      // padding: $padSec;
+      padding: 1.2em;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 1.5em;
       position: relative;
       border: 1px solid $deepBlue;
       box-shadow: $shadow1;
@@ -219,7 +264,7 @@
         width: fit-content;
         height: fit-content;
         flex-direction: column;
-        gap: 16px;
+        gap: 1.2em;
       }
     }
   }
