@@ -104,13 +104,12 @@
         gap: 4em;
 
         .project{
-          min-width: 30em;
-          min-height: 15em;
+          min-width: 10em;
 
           .back{
-            gap: 1.5em;
-            padding: 2em;
-            min-height: 15em;
+            gap: .5em;
+            padding: 1em;
+            // min-height: 15em;
 
             position: absolute;
             top: 0;
@@ -119,8 +118,8 @@
         }
 
         p{
-          font-size: 1.2em;
-          font-weight: 500;
+          // font-size: 1.2em;
+          font-weighst: 500;
         }
 
         .projectsTiles{
