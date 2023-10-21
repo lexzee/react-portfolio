@@ -172,7 +172,7 @@ function App() {
           </div>
           <small>&spades; Designed and Built by <a href='https://github.com/lexzee'>Lexzee</a> &spades;</small>
         </footer>
-        <p className="visits">Page views: {counts.views} and Site Visits: {counts.visits} </p>
+        {/* <p className="visits">Page views: {counts.views} and Site Visits: {counts.visits} </p> */}
       </div>
     </>
   )
