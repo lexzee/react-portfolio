@@ -8,7 +8,7 @@ export const socialData = [
   {
     name: "LinkedIn",
     image: li,
-    link: "https://linkedin.com/abdulquddusabdulrahman"
+    link: "https://linkedin.com/devlexzee"
   },
   {
     name: "Twitter",
