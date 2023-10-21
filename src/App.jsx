@@ -21,6 +21,10 @@ import {nanoid }from 'nanoid'
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [counts, setCounts] = useState({
+    views: 23,
+    visits: 12
+  })
 
   useEffect(() => {
     const handleView = ()=>{
@@ -166,11 +170,9 @@ function App() {
           <div className="contact">
             {socialFoot}
           </div>
-          {/* <p>lorem ipsum dolor sit amet consecuter shfidfb  ksjbfd df   fdfd flih dfju dfj d ffd dfjkj dfj</p> */}
-          {/* <Button value={"Let's Get Started"} class={"beta"} /> */}
-
           <small>&spades; Designed and Built by <a href='https://github.com/lexzee'>Lexzee</a> &spades;</small>
         </footer>
+        <p className="visits">Page views: {counts.views} and Site Visits: {counts.visits} </p>
       </div>
     </>
   )
