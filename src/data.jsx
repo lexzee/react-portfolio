@@ -8,7 +8,7 @@ export const socialData = [
   {
     name: "LinkedIn",
     image: li,
-    link: "https://linkedin.com/devlexzee"
+    link: "https://linkedin.com/in/abdulquddus-abdulrahman"
   },
   {
     name: "Twitter",
@@ -116,46 +116,51 @@ export const toolsData = [
   {
     title: 'HTML',
     image: html,
-    link: '#'
+    link: 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics'
   },
   {
     title: 'CSS',
     image: css,
-    link: '#'
+    link: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
   },
   {
     title: 'JavaScript',
     image: js,
-    link: '#'
+    link: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript'
   },
   {
     title: 'React JS',
     image: react,
-    link: '#'
+    link: 'https://react.dev/'
+  },
+  {
+    title: 'Next Js',
+    image: gh,
+    link: 'https://nextjs.org/'
   },
   {
     title: 'GitHub',
     image: gh,
-    link: '#'
+    link: 'https://github.com/'
   },
   {
     title: 'VS Code',
     image: vscode,
-    link: '#'
+    link: 'https://code.visualstudio.com/'
   },
   {
     title: 'Figma',
     image: figma,
-    link: '#'
+    link: 'https://www.figma.com/'
   },
   {
     title: 'Corel Draw',
     image: 'corel',
-    link: '#'
+    link: 'https://coreldraw.com/'
   },
   {
     title: 'Adobe Illustrator',
     image: 'adobe',
-    link: '#'
+    link: 'https://www.adobe.com/ng/products/illustrator.html'
   },
 ]

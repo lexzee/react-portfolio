@@ -89,7 +89,7 @@ function App() {
               <li><a href='#about'>About</a></li>
               <li><a href='#project'>Project</a></li>
               <li><a href='#contact'>Contact</a></li>
-              <li><a href='https://drive.google.com/file/d/1U6s338BgdLVi-tI_0VgIOVaMoJi-7AVE/view?usp=drive_link'><Button value={"Download Resume"} class={'alpha'} /></a></li>
+              <li><a href='https://docs.google.com/document/d/1c2jXHh8xpbwf10RIdTPRXcjEwrywIyWX1VhyS93kJd4/edit?usp=drive_link'><Button value={"Download Resume"} class={'alpha'} /></a></li>
             </ul>
 
             {/* Mobile Navigation */}
@@ -100,7 +100,7 @@ function App() {
               <li><a href='#about'>About</a></li>
               <li><a href='#project'>Project</a></li>
               <li><a href='#contact'>Contact</a></li>
-              <li><a href='https://drive.google.com/file/d/1U6s338BgdLVi-tI_0VgIOVaMoJi-7AVE/view?usp=drive_link'><Button value={"Download Resume"} class={'alpha'} /></a></li>
+              <li><a href='https://docs.google.com/document/d/1c2jXHh8xpbwf10RIdTPRXcjEwrywIyWX1VhyS93kJd4/edit?usp=drive_link'><Button value={"Download Resume"} class={'alpha'} /></a></li>
             </ul>
           </nav>
           <div className="hero">
